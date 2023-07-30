@@ -215,3 +215,7 @@ button:hover {
 .submit > p {
     margin-top: 30px;
 }
+
+input::placeholder {
+    padding-left: 7px;
+}

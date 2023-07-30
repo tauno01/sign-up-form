@@ -129,7 +129,7 @@ body {
 }
 
 input {
-    padding-left: 2px;
+    padding-left: 7px;
 }
 
 input:focus {
@@ -216,6 +216,3 @@ button:hover {
     margin-top: 30px;
 }
 
-input::placeholder {
-    padding-left: 7px;
-}

@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p {
+    font-size: 20px;
+}
+
+.page-container {
+    display: flex;
+    height: 895px;
+}
+
+.form-container {
+    border-left: 1px solid white;
+    flex: 3;
+    background-color: white;
+}
+
+/* LEFT SECTION */
+
+.image-container {
+    flex: 2;
+    align-self: stretch;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/beach-g3398a92f4_1280.jpg);
+    background-size: cover;
+}
+
+.logo-text-container {
+    height: 200px;
+    width: 100%;
+    margin-top: 30%;
+    background-color: rgb(3, 40, 247, 0.5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid rgba(46, 45, 45, 0.5);
+}
+
+.logo-text-container > img {
+    height: 90%;
+    width: 150px;
+    padding-left: 5px;
+}
+
+.logo-text-container > div > h2 {
+    font-size: 44px;
+    padding: 0 10px 0 5px;
+    text-align: center;
+    color: aliceblue;
+}
+
+/* RIGHT SECTION */
+
+.form-hero,
+.form,
+.submit {
+    padding: 30px;
+}
+
+.form-container > form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.form-hero > h1 {
+    color:rgb(51, 50, 50);
+    font-family: Helvetica, sans-serif;
+    font-size: 60px;
+    text-decoration: underline;
+}
+
+.form-hero > h2 {
+    font-size: 40px;
+    color:rgb(51, 50, 50);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-hero > p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-hero > h2,
+.form-hero > p {
+    margin-top: 20px;
+}
+
+.form {
+    background-color: white;
+    opacity: 0.7;
+    padding-top: 20px;
+    box-shadow: 2px 2px 5px 0 rgb(0, 0, 0);
+}
+
+.form > div {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.form > h2 {
+    margin-bottom: 20px;
+    color: rgb(70, 69, 69);
+}
+
+.form > div > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.form > div > div:nth-child(even) {
+    margin-left: 200px;
+}
+
+input {
+    padding-left: 2px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 300px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #bbbcbe;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+input[type="password"]:hover {
+    background-color: rgba(133, 130, 130, 0.1);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus {
+    border: 1px solid rgb(68, 68, 243);
+    box-shadow: 1px 1px 3px 0 black;
+}
+
+input[type="email"]:valid:not(:placeholder-shown),
+input[type="tel"]:valid:not(:placeholder-shown) {
+  border: 1px solid green;
+  box-shadow: none;
+}
+
+input[type="email"]:invalid:not(:placeholder-shown),
+input[type="tel"]:invalid:not(:placeholder-shown) {
+  border: 1px solid red;
+  box-shadow: none;
+}
+
+input[type="email"]:not(:placeholder-shown),
+input[type="tel"]:not(:placeholder-shown) {
+  border: 1px solid #E5E7EB;
+}
+
+input[type="text"]:valid,
+input[type="password"]:valid {
+    border: 1px solid green;
+    box-shadow: none;
+}
+
+input[type="text"]:valid:not(:focus),
+input[type="email"]:valid:not(:focus),
+input[type="tel"]:valid:not(:focus),
+input[type="password"]:valid:not(:focus) {
+    background-color: rgba(3, 134, 3, 0.2);
+    box-shadow: none;
+}
+
+.pwd {
+    font-size: 12px;
+    width: 300px;
+    padding-top: 4px;
+}
+
+button {
+    padding: 20px 60px;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    background-color: rgb(105, 105, 236);
+    box-shadow: 1px 1px 5px 0 black;
+}
+
+.submit > p {
+    margin-top: 10px;
+}

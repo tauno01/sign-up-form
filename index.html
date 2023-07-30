@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="page-container">
+
+        <div class="image-container">
+            <div class="logo-text-container">
+                <img src="images/seahorse.png" alt="seahorse logo">
+                <div class="logo-text"><h2>Save the world ocean by ocean!</h2></div>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <form action="something.com/something" method="post">
+
+                <div class="form-hero">
+                    <h1>Let's make a change!</h1>
+                    <h2>Save our oceans from pollution by signing up to our website, and become a donator!</h2>
+                    <p>Did you know that at least <strong>14 million TONS</strong> of plastic ends up in our oceans every year? By joining our donator list, your money goes straight to 'The Ocean Cleanup' crew! Their primary mission is to keep our oceans clean and pure.</p>
+                </div>
+
+                <div class="form">
+                    <h2>Save our oceans now!</h2>
+
+                    <div>
+                        <div>
+                            <label for="first_name">FIRST NAME *</label>
+                            <input required 
+                                   type="text" 
+                                   name="first_name" 
+                                   id="first_name" 
+                                   placeholder="John">
+                        </div>
+                        <div>
+                            <label for="last_name">LAST NAME *</label>
+                            <input required 
+                                   type="text" 
+                                   name="last_name" 
+                                   id="last_name" 
+                                   placeholder="Smith">
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <label for="email">EMAIL *</label>
+                            <input required 
+                                   type="email" 
+                                   name="email" 
+                                   id="email" 
+                                   placeholder="your@email.com">
+                        </div>
+                        <div>
+                            <label for="telnumber">PHONE NUMBER *</label>
+                            <input required 
+                                   type="tel" 
+                                   name="telnumber" 
+                                   id="telnumber" 
+                                   placeholder="000-000-0000"
+                                   minlength="7"
+                                   maxlength="15"
+                                   pattern="[0-9]+">
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <label for="password1">PASSWORD *</label>
+                            <input required 
+                                   type="password" 
+                                   name="password1" 
+                                   id="password1"
+                                   pattern="^(?=.*[A-Z])(?=.*\d).{8,}$">
+                                   <p class="pwd">*Minimum of 8 characters, must contain at least one uppercase character and one number.</p>
+                        </div>
+                        <div>
+                            <label for="password2">ENTER PASSWORD AGAIN *</label>
+                            <input required 
+                                   type="password" 
+                                   name="password2" 
+                                   id="password2"
+                                   pattern="^(?=.*[A-Z])(?=.*\d).{8,}$">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="submit">
+                    <button id="button" type="submit">Create Account</button>
+                    <p>Already have an account? <a target="_blank" href="https://www.pornhub.com">Log in</a></p>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+    
+</body>
+</html>

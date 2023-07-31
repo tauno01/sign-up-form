@@ -38,7 +38,8 @@
                                    type="text" 
                                    name="first_name" 
                                    id="first_name" 
-                                   placeholder="John">
+                                   placeholder="John"
+                                   pattern="^(?!(.*[aeiou]{5}|.*[bcdfghjklmnpqrstvwxyz]{5})).*$">
                         </div>
                         <div>
                             <label for="last_name">LAST NAME *</label>
@@ -46,7 +47,8 @@
                                    type="text" 
                                    name="last_name" 
                                    id="last_name" 
-                                   placeholder="Smith">
+                                   placeholder="Smith"
+                                   pattern="^(?!(.*[aeiou]{5}|.*[bcdfghjklmnpqrstvwxyz]{5})).*$">
                         </div>
                     </div>
 
@@ -58,6 +60,7 @@
                                    name="email" 
                                    id="email" 
                                    placeholder="your@email.com">
+                            <span></span>
                         </div>
                         <div>
                             <label for="telnumber">PHONE NUMBER *</label>
@@ -69,6 +72,7 @@
                                    minlength="7"
                                    maxlength="15"
                                    pattern="[0-9]+">
+                            <span></span>
                         </div>
                     </div>
 
@@ -81,7 +85,8 @@
                                    id="password1"
                                    pattern="^(?=.*[A-Z])(?=.*\d).{8,}$"
                                    placeholder="••••••••">
-                                   <p class="pwd">*Minimum of 8 characters, must contain at least one uppercase character and one number.</p>
+                            <span></span>
+                            <p class="pwd">*Minimum of 8 characters, must contain at least one uppercase character and one number.</p>
                         </div>
                         <div>
                             <label for="password2">CONFIRM PASSWORD *</label>
@@ -91,6 +96,7 @@
                                    id="password2"
                                    pattern="^(?=.*[A-Z])(?=.*\d).{8,}$"
                                    placeholder="••••••••">
+                            <span></span>
                         </div>
                     </div>
                 </div>

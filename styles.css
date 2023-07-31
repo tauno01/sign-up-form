@@ -168,7 +168,9 @@ input[type="tel"]:valid:not(:placeholder-shown) {
 }
 
 input[type="email"]:invalid:not(:placeholder-shown),
-input[type="tel"]:invalid:not(:placeholder-shown) {
+input[type="tel"]:invalid:not(:placeholder-shown),
+input[type="text"]:invalid:not(:placeholder-shown),
+input[type="password"]:invalid:not(:placeholder-shown) {
   border: 1px solid red;
   box-shadow: none;
 }
@@ -216,3 +218,10 @@ button:hover {
     margin-top: 30px;
 }
 
+a:hover {
+    color: black;
+}
+
+a:visited {
+    color: purple;
+}
